@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fi" dir="ltr">
+  <!-- Vaihda header ja footer php includeen ja lisää google custom search -->
   <head>
     <!--
     Värimaailma:
