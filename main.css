@@ -1,0 +1,101 @@
+body {
+	font-family: helvetica;
+  margin: 0;
+}
+
+.varoitus {
+	padding: 16px;
+	background-color: red;
+}
+
+.puolet {
+	width: 50%;
+}
+
+.oikea {
+	float: right;
+}
+
+a {
+  color: black;
+}
+
+.p16 {
+	padding: 16px;
+}
+
+.oikealle {
+	float: right;
+}
+
+.vasen {
+	text-align: left;
+}
+
+.kaksikolmasosaa {
+	width: 66%;
+}
+
+.kolmasosa {
+	width: 33%;
+}
+
+.neljäsosaa {
+  width: 25%;
+}
+
+.kolmeneljäsosaa {
+  width: 75%;
+}
+
+.nappi {
+	background-color: #3E92CC;
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	transition: 0.3s;
+	outline: none;
+  display: inline-block;
+  position: relative;
+  min-width: 100px;
+  color: white;
+  border: none;
+}
+
+.nappi:hover {
+	background-color: #2A628F;
+}
+
+.alasveto {
+  position: relative;
+  display: inline-block;
+  min-width: 100px;
+}
+
+.alasvetolaatikko {
+  display: none;
+  position: absolute;
+  border: 1px solid #aaa;
+  background-color: white;
+  min-width: 100px;
+}
+
+.alasveto:hover .alasvetolaatikko {
+  display: block;
+}
+
+.syöte {
+	border-radius: 60px;
+	padding: 20px;
+  border: 2px solid #b8c0ff;
+}
+
+/* Fixaa ja parantele loppuun asti*/
+@media only screen and (max-width: 600px) {
+  .kolmeneljäsosaa {
+    width: 100%;
+  }
+  .neljäsosa {
+    width: 100%;
+  }
+}
