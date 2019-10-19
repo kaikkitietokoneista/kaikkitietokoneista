@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fi" dir="ltr">
-  <!-- Vaihda header ja footer php includeen ja lisää google custom search -->
   <head>
     <!--
     Värimaailma:
@@ -23,26 +22,7 @@
     <link rel="stylesheet" href="src/prism.css" data-noprefix>
   </head>
   <body>
-    <header style="padding: 16px; background-image: url('https://cdn.pixabay.com/photo/2017/05/29/18/22/matrix-2354492_960_720.jpg'); /*linear-gradient(#939de6, white)*/">
-  		<h1 style="color: white;">Kaikkitietokoneista.<wbr>net</h1>
-  		<a href="/" class="nappi">Etusivu</a>
-  		<a href="lahiverkko" class="nappi">Lähiverkon rakentaminen</a>
-      <div class="alasveto">
-  		    <a href="ohjelmat" class="nappi">Ohjelmat</a>
-          <div class="alasvetolaatikko">
-            <a href="ohjelmat" class="nappi">Ohjelmat</a>
-            <a href="http://kaikkitietokoneista.net/8080" class="nappi">Työkalut</a>
-            <a href="botit" class="nappi">Botit</a>
-          </div>
-      </div>
-  		<div class="oikea">
-        <script>
-          var d = new Date();
-          var months = ["Tammikuu", "Helmikuu", "Maaliskuu", "Huhtikuu", "Toukokuu", "Kesäkuu", "Heinäkuu", "Elokuu", "Syyskuu", "Lokakuu", "Marraskuu", "Joulukuu"]
-          document.write(months[d.getMonth()], " ", d.getDate(), " ", d.getHours(), ":", d.getMinutes());
-        </script>
-      </div>
-  	</header>
+    <?php include 'header.php'; ?>
     <div style="width: 25%; float: right;"><a class="twitter-timeline" href="https://twitter.com/RoyTakanen?ref_src=twsrc%5Etfw">RoyTakasen Tweetit</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
     <div id="tutoriaalit"></div>
     <?php
@@ -66,10 +46,6 @@
     });
     </script>
     <?php } ?>
-    <footer style="background-color: #16324F; color: white;" class="p16">
-      <center><p>Hakkereille, ohjelmoijille, tietokonenörteille ja valkohatuille suunnattu sivusto.</p></center>
-      <p class="p16"><b>Muista:</b> näitä ohjeita ei ole tarkoitettu pahaan, jotenka jos pystyisit esimerkiksi murtamaan koulusi sisäverkon näillä ohjeilla. Niin sinun tulee ilmoittaa siitä ATK-henkilöstölle eikä kerätä koevastauksia avoimien printtereiden kautta.</p>
-    </footer>
-    <script src="src/prism.js"></script>
+    <?php include 'footer.php'; ?>
   </body>
 </html>

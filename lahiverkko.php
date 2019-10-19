@@ -12,26 +12,7 @@
     <link rel="stylesheet" href="src/prism.css" data-noprefix>
   </head>
   <body>
-    <header style="padding: 16px; background-image: url('https://cdn.pixabay.com/photo/2017/05/29/18/22/matrix-2354492_960_720.jpg'); /*linear-gradient(#939de6, white)*/">
-  		<h1 style="color: white;">Kaikkitietokoneista.<wbr>net</h1>
-  		<a href="/" class="nappi">Etusivu</a>
-  		<a href="lahiverkko" class="nappi">Lähiverkon rakentaminen</a>
-  		<a href="/" class="nappi">Pitkät oppaat</a>
-      <div class="alasveto">
-  		    <a href="ohjelmat" class="nappi">Ohjelmat</a>
-          <div class="alasvetolaatikko">
-            <a href="ohjelmat" class="nappi">Ohjelmat</a>
-            <a href="http://kaikkitietokoneista.net/8080" class="nappi">Työkalut</a>
-            <a href="ohjelmat" class="nappi">Botit</a>
-          </div>
-      </div>
-  		<div class="oikea"><script>
-        var d = new Date();
-        var months = ["Tammikuu", "Helmikuu", "Maaliskuu", "Huhtikuu", "Toukokuu", "Kesäkuu", "Heinäkuu", "Elokuu", "Syyskuu", "Lokakuu", "Marraskuu", "Joulukuu"]
-        document.write(months[d.getMonth()], " ", d.getDate(), " ", d.getHours(), ":", d.getMinutes());
-      </script>
-      </div>
-  	</header>
+    <?php include 'header.php'; ?>
     <div style="width: 25%; float: right;"><a class="twitter-timeline" href="https://twitter.com/RoyTakanen?ref_src=twsrc%5Etfw">RoyTakasen Tweetit</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
     <script>alert("Varoitus! Olet työmaa-alueella. Älä valita epäselvyydestä!!!");</script>
     <div style="padding: 16px;">
@@ -45,10 +26,6 @@
         <li><b>Kytkin reitittimen ja ulkoverkon väliin.</b> Asettamalla vanhankin varastosta löytyneen kytkimen ulkoverkon ja reitittimen väliin, saat jaettua kuormaa ja yhdistettyä neljä (4) laitetta ulkoverkkoon eristetyllä IP-osoitteella. Näissä koneissa tulee olla kuitenkin hyvin tehokkaat palomuurit, koska välissä ei enää ole reititintä suojaamassa. Laitoin alapuolelle kuvan esimerkistä. <i>Useimmat internet-palveluntarjoajat jakavat 5 dynaamista ip-osoitetta.</i><br><br><img src="src/Kytkin_ulkoverkon_välissä_esimerkki.png"></li>
       </ol>
     </div>
-    <footer style="background-color: #16324F; color: white;" class="p16">
-      <center><p>Hakkereille, ohjelmoijille, tietokonenörteille ja valkohatuille suunnattu sivusto.</p></center>
-      <p class="p16"><b>Muista:</b> näitä ohjeita ei ole tarkoitettu pahaan, jotenka jos pystyisit esimerkiksi murtamaan koulusi sisäverkon näillä ohjeilla. Niin sinun tulee ilmoittaa siitä ATK-henkilöstölle eikä kerätä koevastauksia avoimien printtereiden kautta.</p>
-    </footer>
-    <script src="src/prism.js"></script>
+    <?php include 'footer.php'; ?>
   </body>
 </html>
