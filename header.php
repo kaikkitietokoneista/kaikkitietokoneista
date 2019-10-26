@@ -6,7 +6,7 @@
       <a href="ohjelmat" class="nappi">Ohjelmat</a>
       <div class="alasvetolaatikko">
         <a href="ohjelmat" class="nappi">Ohjelmat</a>
-        <a href="http://kaikkitietokoneista.net/8080" class="nappi">Työkalut</a>
+        <a href="http://srv.kaikkitietokoneista.net:8080" class="nappi">Työkalut</a>
         <a href="botit" class="nappi">Botit</a>
       </div>
   </div>
