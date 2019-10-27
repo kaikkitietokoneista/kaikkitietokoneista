@@ -12,10 +12,6 @@ body {
 	width: 50%;
 }
 
-.oikea {
-	float: right;
-}
-
 a {
   color: black;
 }
@@ -40,7 +36,7 @@ a {
 	width: 33%;
 }
 
-.neljäsosaa {
+.neljäsosa {
   width: 25%;
 }
 
@@ -98,4 +94,12 @@ a {
   .neljäsosa {
     width: 100%;
   }
+
+	header {
+		text-align: center;
+	}
+
+	header a {
+		width: 250px;
+	}
 }
