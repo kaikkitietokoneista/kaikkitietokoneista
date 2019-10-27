@@ -23,7 +23,9 @@
   </head>
   <body>
     <?php include 'header.php'; ?>
-    <div style="width: 25%; float: right;"><a class="twitter-timeline" href="https://twitter.com/RoyTakanen?ref_src=twsrc%5Etfw">RoyTakasen Tweetit</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+    <div class="neljäsosa oikealle">
+      <iframe src="twitterembed.html" frameBorder="0" width="100%" height="500px"></iframe>
+    </div>
     <div id="tutoriaalit"></div>
     <?php
     if ($_GET["p"] != "") {
