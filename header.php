@@ -10,7 +10,7 @@
         <a href="botit" class="nappi">Botit</a>
       </div>
   </div>
-  <div class="oikea" style="color: white;">
+  <div class="oikealle" style="color: white;">
     <script>
       var d = new Date();
       var months = ["Tammikuu", "Helmikuu", "Maaliskuu", "Huhtikuu", "Toukokuu", "Kesäkuu", "Heinäkuu", "Elokuu", "Syyskuu", "Lokakuu", "Marraskuu", "Joulukuu"]
