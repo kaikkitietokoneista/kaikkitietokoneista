@@ -13,8 +13,10 @@
   <body>
     <?php include 'header.php'; ?>
 
-    <div style="width: 25%; float: right;"><a class="twitter-timeline" href="https://twitter.com/RoyTakanen?ref_src=twsrc%5Etfw">RoyTakasen Tweetit</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-
+    <div class="neljäsosa oikealle">
+      <iframe src="twitterembed.html" frameBorder="0" width="100%" height="500px"></iframe>
+    </div>
+    
     <h4 class="p16">Kaikkidokumentit (PHP)</h4>
     <p class="p16">Yhden tiedoston ohjelma, joka tallentaa ja tekee tiedostoja MySQL-tietokantaan sisältäen yksinkertaiset rikastekstin muokkausminaisuudet. Ohjelman lähdekoodi on avoin ja löydät sen <a href="https://github.com/kaikkitietokoneista/kaikkidokumentit">Githubista</a>. Tehty PHP:lla.</p>
 
