@@ -12,7 +12,11 @@
   </head>
   <body>
     <?php include 'header.php'; ?>
-    <div class="oikealle neljäsosa"><a class="twitter-timeline" href="https://twitter.com/RoyTakanen?ref_src=twsrc%5Etfw">RoyTakasen Tweetit</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+    <div class="neljäsosa oikealle">
+      <iframe src="twitterembed.html" frameBorder="0" width="100%" height="500px"></iframe>
+    </div>
+    
     <h4 class="p16">Sääbotti (Node.JS)</h4>
     <p class="p16">Botti ilmoittaa sinulle Telegramissa yksinkertaisella komennolla annetun kaupungin sään. Voit tavoittaa botin osoitteesta <a href="https://t.me/ktweather_bot">t.me/ktweather_bot</a>. Botin lähdekoodi on avoin ja löydät sen <a href="https://github.com/kaikkitietokoneista/weather-tgbot">Githubista</a>. Tehty Node.JS:llä</p>
     <h4 class="p16">InstantDuck (Node.JS)</h4>
