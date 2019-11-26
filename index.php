@@ -20,8 +20,29 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/prism.css" data-noprefix>
-    <meta name="description" content="Ajatuksia tietoturvasta ja digimaailmasta">
-    <meta name="keywords" content="Tietoturva, Kaikkitietokoneista, Kaikki tietokoneista, Häkkeröinti, Ohjelmointi, Lähiverkko">
+    <?php
+    //Parempi SEO
+      if ($_GET["p"] != "") {
+        $arrayhakemisto = scandir(getcwd() . "/artikkelit", SCANDIR_SORT_DESCENDING);
+        foreach($arrayhakemisto as $file) {
+          $tiedostonnimi = str_replace(".tiny", "",$file);
+          $path2file = getcwd() . "/artikkelit/" . $file;
+          $tiedosto = fopen($path2file, "r");
+          $content = fread($tiedosto, filesize($path2file));
+          if ($_GET["p"] === $tiedostonnimi) {
+            $meta = get_meta_tags($path2file);
+            echo "<meta name='description' content='" . $meta['description'] . "'>";
+            echo "<meta name='keywords' content='" . $meta['keywords'] . "'>";
+
+          }
+        }
+      } else {
+        ?>
+        <meta name="description" content="Ajatuksia tietoturvasta ja digimaailmasta">
+        <meta name="keywords" content="Tietoturva, Kaikkitietokoneista, Kaikki tietokoneista, Häkkeröinti, Ohjelmointi, Lähiverkko">
+        <?php
+      }
+     ?>
   </head>
   <body>
     <?php include 'header.php'; ?>
@@ -53,4 +74,3 @@
     <?php include 'footer.php'; ?>
   </body>
 </html>
-	
