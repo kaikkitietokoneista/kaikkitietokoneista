@@ -6,7 +6,7 @@
   <body>
     <div class="kolmeneljäsosaa" style="display: inline-block;">
     <?php
-      $arrayhakemisto = scandir(getcwd() . "/artikkelit", SCANDIR_SORT_DESCENDING);
+      $arrayhakemisto = scandir(getcwd() . "/artikkelit", 1);
       foreach($arrayhakemisto as $file) {
         /*Poistaa . ja .. näkyvistä*/
         if ($file != ".") {

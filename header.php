@@ -6,6 +6,7 @@ if (location.protocol == "http:") {
 }
 </script>
 <header style="padding: 16px; background-image: url('src/header.jpg'); /*linear-gradient(#939de6, white)*/">
+  <link rel="icon" href="src/con.png">
   <h1 style="color: white;">Kaikkitietokoneista.<wbr>net</h1>
   <a href="/" class="nappi">Etusivu</a>
   <a href="lahiverkko" class="nappi">Lähiverkon rakentaminen</a>
@@ -25,4 +26,4 @@ if (location.protocol == "http:") {
     </script>
   </div>
 </header>
-		
+			

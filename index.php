@@ -20,6 +20,8 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/prism.css" data-noprefix>
+    <meta name="description" content="Ajatuksia tietoturvasta ja digimaailmasta">
+    <meta name="keywords" content="Tietoturva, Kaikkitietokoneista, Kaikki tietokoneista, Häkkeröinti, Ohjelmointi, Lähiverkko">
   </head>
   <body>
     <?php include 'header.php'; ?>
@@ -51,3 +53,4 @@
     <?php include 'footer.php'; ?>
   </body>
 </html>
+	
