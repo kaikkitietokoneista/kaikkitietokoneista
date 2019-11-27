@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="fi" dir="ltr">
   <head>
+    <!-- TO DO
+
+    Käytä preload-tagia enemmän nopeuttamaan latausaikoja
+   -->
     <!--
     Värimaailma:
     Celestial blue: #3E92CC
@@ -14,7 +18,7 @@
     <meta charset="utf-8">
     <title>Etusivu &laquo; kaikkitietokoneista.net</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css">
+    <link rel="preload" href="main.css" as="style">
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
