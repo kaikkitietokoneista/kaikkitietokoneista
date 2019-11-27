@@ -18,7 +18,7 @@
     <meta charset="utf-8">
     <title>Etusivu &laquo; kaikkitietokoneista.net</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preload" href="main.css" as="style">
+    <link rel="stylesheet" href="main.css">
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -27,7 +27,7 @@
     <?php
     //Parempi SEO
       if ($_GET["p"] != "") {
-        $arrayhakemisto = scandir(getcwd() . "/artikkelit", SCANDIR_SORT_DESCENDING);
+        $arrayhakemisto = scandir(getcwd() . "/artikkelit", 1);
         foreach($arrayhakemisto as $file) {
           $tiedostonnimi = str_replace(".tiny", "",$file);
           $path2file = getcwd() . "/artikkelit/" . $file;
