@@ -18,8 +18,25 @@
     <div class="neljäsosa oikealle">
       <iframe src="twitterembed.html" frameBorder="0" width="100%" height="500px"></iframe>
     </div>
+    <h3>Hostaus</h3>
+    <i>Enemmän kuin web-hotelleja</i>
+    <h4>Web-hotellit</h4>
     <table>
-
+      <tr>
+        <th></th>
+        <th>Ilmainen</th>
+        <th>Pieni</th>
+      </tr>
+      <tr>
+        <td>Hinta: </td>
+        <td>0 €</td>
+        <td>2 €</td>
+      </tr>
+      <tr>
+        <th>Levytila</th>
+        <th>10 MB</th>
+        <th>100 MB</th>
+      </tr>
     </table>
     <?php include 'footer.php'; ?>
   </body>
