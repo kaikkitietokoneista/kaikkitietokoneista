@@ -3,13 +3,22 @@ body {
   margin: 0;
 }
 
-.varoitus {
-	padding: 16px;
-	background-color: red;
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 75%;
 }
 
-.puolet {
-	width: 50%;
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+	background-color:  #3E92CC;
+}
+
+td, th {
+	padding: 16px;
 }
 
 a {
@@ -18,6 +27,20 @@ a {
 
 h4 {
 	padding: 16px;
+}
+
+p {
+	padding: 16px;
+}
+
+
+.varoitus {
+	padding: 16px;
+	background-color: red;
+}
+
+.puolet {
+	width: 50%;
 }
 
 .p16 {
