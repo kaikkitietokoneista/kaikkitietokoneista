@@ -32,7 +32,7 @@
           <th>Pieni</th>
         </tr>
         <tr>
-          <td>Hinta: </td>
+          <td>Hinta/kk: </td>
           <td>0 €</td>
           <td>2 €</td>
         </tr>
