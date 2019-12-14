@@ -1,0 +1,164 @@
+body {
+	font-family: helvetica;
+  margin: 0;
+  /* background-color: #2A628F; */
+}
+
+footer {
+  width: 100%;
+  padding: 16px;
+  color: white;
+  background-color: #13293D;
+  bottom: 0;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 75%;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+	background-color:  #3E92CC;
+}
+
+td, th {
+	padding: 16px;
+}
+
+a {
+  color: black;
+}
+
+h4 {
+	padding: 16px;
+}
+
+p {
+	padding: 16px;
+}
+
+
+.varoitus {
+	padding: 16px;
+	background-color: red;
+}
+
+.puolet {
+	width: 50%;
+}
+
+.oikealle {
+	float: right;
+}
+
+.vasen {
+	text-align: left;
+}
+
+.vasemmalle {
+  float: left;
+}
+
+.kaksikolmasosaa {
+	width: 66%;
+}
+
+.kolmasosa {
+	width: 33%;
+}
+
+.neljäsosa {
+  width: 25%;
+}
+
+.kolmeneljäsosaa {
+  width: 75%;
+}
+
+.p16 {
+  padding: 16px;
+}
+
+.nappi {
+	background-color: #3E92CC;
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	transition: 0.3s;
+	outline: none;
+  display: inline-block;
+  position: relative;
+  min-width: 100px;
+  color: white;
+  border: none;
+}
+
+.nappi:hover {
+	background-color: #2A628F;
+}
+
+.alasveto {
+  position: relative;
+  display: inline-block;
+  min-width: 100px;
+}
+
+.alasvetolaatikko {
+  display: none;
+  position: absolute;
+  border: 1px solid #aaa;
+  background-color: white;
+  min-width: 100px;
+}
+
+.alasveto:hover .alasvetolaatikko {
+  display: block;
+}
+
+.syöte {
+	border-radius: 60px;
+	padding: 20px;
+  border: 2px solid #b8c0ff;
+}
+
+.kortti {
+  background-color: #16324F;
+  padding: 16px;
+  border-radius: 5px;
+  color: white;
+  width: 90%;
+  text-align: left;
+}
+
+input[type="text"]{
+  width: 80%;
+  padding: 8px;
+}
+
+.fi {
+  background-color: lightgrey;
+  padding: 8px;
+}
+
+/* Fixaa ja parantele loppuun asti*/
+@media only screen and (max-width: 600px) {
+  .kolmeneljäsosaa {
+    width: 100%;
+  }
+  .neljäsosa {
+    width: 100%;
+  }
+
+	header {
+		text-align: center;
+	}
+
+	header a {
+		width: 250px;
+	}
+}
