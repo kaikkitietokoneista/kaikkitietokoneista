@@ -30,6 +30,16 @@
       <br>
       <center><form method="post" action="/domain.php"><input type="text" name="domain" placeholder="domain"><span class="fi">.fi</span><input type="submit" class="nappi" value="Hae"></form></center>
     </div>
+    <div class="p16 puolet">
+      <div class="kortti">
+        <p>Webhotellit</p>
+      </div>
+    </div>
+    <div class="p16 puolet">
+      <div class="kortti">
+        <p>DNS</p>
+      </div>
+    </div>
 <!--    <center>
       <div class="p16">
         <div class="kortti">

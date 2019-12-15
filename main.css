@@ -83,6 +83,11 @@ p {
   padding: 16px;
 }
 
+.domain {
+	height: 120px;
+	border-bottom: 2px solid black;
+}
+
 .nappi {
 	background-color: #3E92CC;
 	padding: 10px;
@@ -127,11 +132,8 @@ p {
 
 .kortti {
   background-color: #16324F;
-  padding: 16px;
-  border-radius: 5px;
   color: white;
-  width: 90%;
-  text-align: left;
+  width: 100%;
 }
 
 input[type="text"]{
