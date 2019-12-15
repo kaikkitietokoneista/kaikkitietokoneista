@@ -9,7 +9,7 @@
   <link rel="icon" href="src/con.png">
   <h1 style="color: white;">Kaikkitietokoneista.<wbr>net</h1>
   <a href="/" class="nappi">Etusivu</a>
-  <a href="vertaile" class="nappi">Hinnasto</a>
+  <a href="hinnasto.php" class="nappi">Hinnasto</a>
   <div class="oikealle" style="color: white;">
     <script>
       var d = new Date();

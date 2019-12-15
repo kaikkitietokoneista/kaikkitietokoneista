@@ -31,12 +31,13 @@
       <center><form method="post" action="/domain.php"><input type="text" name="domain" placeholder="domain"><span class="fi">.fi</span><input type="submit" class="nappi" value="Hae"></form></center>
     </div>
     <?php
-      $vastaus = shell_exec("whois " . $_POST["domain"] . ".fi");
+      $komento = escapeshellcmd("whois " . $_POST["domain"] . ".fi");
+      $vastaus = shell_exec($komento);
       //Debuggausta varten echo $vastaus;
       if (strstr($vastaus, "Domain not found")) {
         ?>
         <p>Domain on saatavilla</p>
-        
+        <p>Varaa domain <?php echo htmlspecialchars($_POST["domain"]) . ".fi";?> hintaan 15 €<small>/vuosi</small> <a href="<?php echo "/kauppa.php?hanki=domain&domain=" . $_POST['domain']; ?>">tästä</a>.</p>
         <?php
       } else {
         ?>
@@ -44,6 +45,6 @@
         <?php
       }
     ?>
-    <?php //include 'footer.php'; ?>
+    <?php include 'footer.php'; ?>
   </body>
 </html>
