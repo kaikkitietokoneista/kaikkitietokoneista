@@ -1,0 +1,14 @@
+<meta name="description" content="CMD-lukitttu ilmoituksen kiertäminen Pythonilla .">
+<meta name="keywords" content="Python3 CMD, CMD murtaminen, Kaikkitietokoneista, CMD lukittu, CMD häkkääminen, Python CMD-häkkääminen">
+<a href='?p=CMD murtaminen Windows'><center><h3>CMD murtaminen Windows</center></h3></a><section>
+<div class="p16"><i>Kirjoitettu: 13. lokakuuta 2019</i></div>
+<p class="p16"><b>Tulossa uudempi ohje!!!</b></p>
+<p class="p16">CMD:n murtaminen on hyödyllistä tietää varsinkin, jos ylläpitäjä on estänyt sen käytön.</p>
+<p class="p16">Ensimmäisenä sinulla tulee olla Python asennettuna. Jos sitä ei ole asennettu, asenna se <a href="https://www.python.org/downloads/">täältä</a>. Seuraavaksi tee tiedosto työpöydälle nimellä cmd.py. Voit avata tiedoston millä tahansa tekstieditorilla. Koodi jonka laitat tiedostoon on alapuolella.</p>
+<pre><code class="language-python line-numbers">import os
+
+while True:
+  komento = input(">>> ")
+  os.system(komento)</code></pre>
+  <p class="p16">Rivi yksi ottaa moduulin <code>os</code> käyttöön, jolla voi ajaa komentoja. Rivi 3 taas käynnistää silmukan, joka ajaa tabulaattorilla ulostyönnettyä koodia ikuisesti. Rivi neljä määrittää muuttujan <code>komento</code> annetuksi syötteeksi. Viimeinen rivi ajaa syötteen komentona ja näyttää ulostulon (output).</p>
+<hr>

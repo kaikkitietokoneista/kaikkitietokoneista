@@ -2,6 +2,7 @@
 <html lang="fi" dir="ltr">
   <head>
     <!-- TO DO
+
     Käytä preload-tagia enemmän nopeuttamaan latausaikoja
    -->
     <!--
@@ -11,6 +12,7 @@
     Yankees Blue: #13293D
     Space Cadet: #16324F
     Japanese Indigo: #18435A
+
     https://coolors.co/3e92cc-2a628f-13293d-16324f-18435a
     -->
     <meta charset="utf-8">
@@ -21,43 +23,58 @@
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
-    <meta name="description" content="Web-hotelleja ja DNS-palveluita">
-    <meta name="keywords" content="Web-hotelli, Kaikkitietokoneista, Kaikki tietokoneista, DNS-palvelu">
+    <link rel="stylesheet" href="src/prism.css" data-noprefix>
+    <?php
+    //Parempi SEO
+      if ($_GET["p"] != "") {
+        $arrayhakemisto = scandir(getcwd() . "/artikkelit", 1);
+        foreach($arrayhakemisto as $file) {
+          $tiedostonnimi = str_replace(".tiny", "",$file);
+          $path2file = getcwd() . "/artikkelit/" . $file;
+          $tiedosto = fopen($path2file, "r");
+          $content = fread($tiedosto, filesize($path2file));
+          if ($_GET["p"] === $tiedostonnimi) {
+            $meta = get_meta_tags($path2file);
+            echo "<meta name='description' content='" . $meta['description'] . "'>";
+            echo "<meta name='keywords' content='" . $meta['keywords'] . "'>";
+
+          }
+        }
+      } else {
+        ?>
+        <meta name="description" content="Ajatuksia tietoturvasta ja digimaailmasta">
+        <meta name="keywords" content="Tietoturva, Kaikkitietokoneista, Kaikki tietokoneista, Häkkeröinti, Ohjelmointi, Lähiverkko">
+        <?php
+      }
+     ?>
   </head>
   <body>
     <?php include 'header.php'; ?>
-    <div class="domain">
-      <br>
-      <center><form method="post" action="/domain.php"><input type="text" name="domain" placeholder="domain"><span class="fi">.fi</span><input type="submit" class="nappi" value="Hae"></form></center>
+    <div class="neljäsosa oikealle">
+      <iframe src="twitterembed.html" frameBorder="0" width="100%" height="500px"></iframe>
     </div>
-    <div class="p16 puolet">
-      <div class="kortti">
-        <p>Webhotellit</p>
-      </div>
-    </div>
-    <div class="p16 puolet">
-      <div class="kortti">
-        <p>DNS</p>
-      </div>
-    </div>
-<!--    <center>
-      <div class="p16">
-        <div class="kortti">
-          <h2>Kaistanleveys 100 Mbps</h2>
-        </div>
-      </div>
-      <div class="p16">
-        <div class="kortti">
-          <h2>Anti-DDoS</h2>
-        </div>
-      </div>
-      <div class="p16">
-        <div class="kortti">
-          <h2>SSD-levyt</h2>
-        </div>
-      </div>
-    </center>-->
-
+    <div id="tutoriaalit"></div>
+    <?php
+    if ($_GET["p"] != "") {
+      $arrayhakemisto = scandir(getcwd() . "/artikkelit", SCANDIR_SORT_DESCENDING);
+      foreach($arrayhakemisto as $file) {
+        $tiedostonnimi = str_replace(".tiny", "",$file);
+        $path2file = getcwd() . "/artikkelit/" . $file;
+        $tiedosto = fopen($path2file, "r");
+        $content = fread($tiedosto, filesize($path2file));
+        if ($_GET["p"] === $tiedostonnimi) {
+          echo $content;
+        }
+      }
+    } else {
+    ?>
+    <script>
+    $.get("kaikki-artikkelit.php", {},
+      function(data){
+        $("#tutoriaalit").html(data);
+    });
+    </script>
+    <?php } ?>
     <?php include 'footer.php'; ?>
   </body>
 </html>

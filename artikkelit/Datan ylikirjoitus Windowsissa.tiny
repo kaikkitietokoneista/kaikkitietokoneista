@@ -1,0 +1,9 @@
+<meta name="description" content="Poistetun datan ylikirjoittaminen CMD:n avulla.">
+<meta name="keywords" content="ylikirjoitus, Windows, CMD, Windows 10, Ylikirjoittaminen, cipher">
+<a href='?p=Datan ylikirjoitus Windowsissa'><center><h3>Datan ylikirjoitus Windowsissa</center></h3></a><section>
+<i class="p16">Kirjoitettu: 16. lokakuuta 2019</i>
+<p class="p16"><strong>Huomautus: </strong>voit ajaa komennon normaaleilla oikeuksilla.</p>
+<p class="p16">Alla oleva komento ylikirjoittaa kaiken datan, joka ei ole käytössä (tiedostot ja kansiot säilyvät), D-levystä. Voit vaihtaa D-levyn vaikka C- tai E-levyksi.</p>
+<pre><code class="language-batch line-numbers">cipher /w:D</code></pre>
+<p class="p16">Tämä komento ei ole pääosin tähän tarkoitettu, mutta toimii tämä aivan mahtavasti tässäkin työssä. Lisätietoja komennosta on <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cipher">täällä (englanniksi)</a>.</p>
+<hr>
