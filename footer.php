@@ -1,7 +1,5 @@
-<footer style="background-color: #16324F; color: white;" class="p16">
-  <p class="p16">IP-osoitteesi on: <?php echo $_SERVER["REMOTE_ADDR"]; ?></p>
-  <center><p>Hakkereille, ohjelmoijille, tietokonenörteille ja valkohatuille suunnattu sivusto.</p></center>
-  <p class="p16"><b>Muista:</b> näitä ohjeita ei ole tarkoitettu pahaan, jotenka jos pystyisit esimerkiksi murtamaan koulusi sisäverkon näillä ohjeilla. Niin sinun tulee ilmoittaa siitä ATK-henkilöstölle eikä kerätä koevastauksia avoimien printtereiden kautta.</p>
-  <p class="p16"><strong><center>Sivuston lähdekoodi <a href="https://github.com/kaikkitietokoneista/kaikkitietokoneista">Githubissa</a></center></strong></p>
+<footer class="w3-container w3-theme-d3">
+  <p>&copy; 2018-2019 Kaikkitietokoneista.net</p>
+  <p><a href="https://54.37.8.79:8080">Hallintapaneeliin</a></p>
+  <p>Ota yhteyttä: <i>info@kaikkitietokoneista.net</i></p>
 </footer>
-<script src="src/prism.js"></script>
